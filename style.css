@@ -129,7 +129,22 @@ section::before{
     content: "Front-End Development";
 }
 
+form label {
+    font-weight: 600;
+}
 
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact::before{
+    content: "Contact";
+}
+
+.contact-form {
+    border: 3px solid black;
+    padding: 64px 32px;
+}
 
 @keyframes upDown {
     0% {
