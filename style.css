@@ -6,6 +6,12 @@ section {
     position: relative;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 section::before{
     z-index: -1;
     content: '';
