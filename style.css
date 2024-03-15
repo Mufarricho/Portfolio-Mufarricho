@@ -17,6 +17,32 @@ section::before{
     top: 20px;
     left: -30px;
 }
+.navbar .myname:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.5ms;
+    -webkit-transition: 0.5ms;
+    -moz-transition: 0.5ms;
+    -ms-transition: 0.5ms;
+    -o-transition: 0.5ms;
+}
+
+.navbar .firstname {
+    color: rgb(158, 158, 158);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.navbar .lastname {
+    color: rgb(82, 82, 82);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
 
 .btn.button {
     border: 3px solid black;
@@ -38,12 +64,13 @@ section::before{
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
-.home h1 {
-    font-size: 72px;
+
+home img {
+    width: 100%;
 }
 
-.home h3 {
-    font-size: 48px;
+.fotoku {
+    box-shadow:none 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .home .arrow img{
@@ -133,6 +160,63 @@ form label {
     font-weight: 600;
 }
 
+@media only screen and (max-width:768px){
+    .home img {
+        width: 50%;
+    }
+    .namaku {
+        font-size: 100px;
+    }
+    .work-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section::before{
+        left: -10px;
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:576px){
+    .home img {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .namaku {
+        font-size: 60px;
+    }
+
+    section::before{
+        left: 10px;
+    }
+    .intro {
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width:380px){
+    .namaku {
+        font-size: 50px;
+    }
+    .sosmed {
+        width: 150px;
+    }
+    .sosmed p {
+        font-size: 10px;
+    }
+    .namaku {
+        font-size: 40px;
+    }
+    section::before{
+        left: 10px;
+    }
+    .intro{
+        font-size: 30px;
+    }
+}
+
 .contact {
     padding-bottom: 128px;
 }
@@ -145,6 +229,13 @@ form label {
     border: 3px solid black;
     padding: 64px 32px;
 }
+
+.message {
+    width: 100%;
+    height: 100px;
+}
+
+
 
 @keyframes upDown {
     0% {

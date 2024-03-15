@@ -12,14 +12,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Achmad Mufarricho</a>
+          <a class="navbar-brand" href="#home"><span class="myname"><span class="firstname fs-6">ACHMAD</span><span class="lastname fw-bold fs-6">MUFARRICHO</span></span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -28,7 +28,7 @@
                 <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -37,21 +37,22 @@
 
     <!-- Home -->
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center ">
-            <div class="col-8">
-                <h3 class="fw-semibold ">Hi! I am</h3>
-                <h1 class="fw-bold ">Achmad Mufarricho</h1>
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-md-8">
+                <h3 class="intro fw-semibold ">Hi! I am</h3>
+                <h1 class="namaku fw-bold">Achmad Mufarricho</h1>
                 <p>I am Software Engineer based in Indonesia</p>
-                <a class="btn button w-25" href="image/aku.png" download>Resume</a>
+                <a class="btn button w-25" href="image/aku3.png" download>Resume</a>
             </div>
-            <div class="col-4">
-                <img class="w-75  " src="image/aku3.png" alt="achmad mufarricho">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img class="w-75  fotoku" src="image/aku3.png" alt="achmad mufarricho">
             </div>
-            <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-                <a class="text-decoration-none text-dark" href="#about">More Info</a>
-                <img id="arrow" src="image/arrow.svg" alt="arrow">
-            </div>
+            
         </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class=" text-dark" >More Info</div>
+            <img id="arrow" src="image/arrow.svg" alt="arrow">
+        </a>
     </section>
 
     <!-- Page 2 -->
@@ -100,7 +101,7 @@
 
     <!-- Page 3 -->
     <section id="work" class="work container">
-        <div class="row d-flex align-items-center gap-5">
+        <div class="work-child row d-flex align-items-center gap-5">
             <div class="col">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente maxime qui debitis amet quia quaerat repudiandae ab, numquam veritatis esse ullam, voluptates, at fugit dolorem aspernatur explicabo sit fuga. Quas, sit ullam? Blanditiis quae harum quasi. Autem quae odio quas architecto iure, inventore, fugit excepturi ad aliquam consectetur optio rem.</p>
             </div>
@@ -121,24 +122,24 @@
 <!-- contact -->
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ad excepturi, veniam autem accusamus corporis rerum dolorem modi ipsa assumenda quas hic illum, quos aliquam dolore iure voluptate velit! Eius facere perspiciatis voluptates velit numquam inventore minus tempore magnam, eaque harum reiciendis. Laboriosam accusantium dolor ullam modi iure architecto laborum.</p>
-                <div class="row">
+                <div class="sosmed row">
                     <div class="col d-flex align-items-center">
-                        <img src="image/Facebook.svg" alt="facebook icon">
-                        <p>Achmad Mufarricho</p>
+                        <img class="w-25" src="image/Facebook.svg" alt="facebook icon">
+                        <p class="mb-0 ms-2">Achmad Mufarricho</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="image/Twitter.svg" alt="twitter icon">
-                        <p>@Mufarricho</p>
+                        <img class="w-25" src="image/Twitter.svg" alt="twitter icon">
+                        <p class="mb-0 ms-2">@Mufarricho</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="image/Instagram.svg" alt="instagram icon">
-                        <p>@farricho</p>
+                        <img class="w-25" src="image/Instagram.svg" alt="instagram icon">
+                        <p class="mb-0 ms-2">@farricho</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <form class="contact-form" onsubmit="formSubmit(event)">
                     <div class="mb-3">
                       <label for="inp_email" class="form-label"> Email</label>
@@ -151,7 +152,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="inp_message" class="form-label">Pesan</label>
-                        <input type="text" class="form-control" id="inp_message" placeholder="masukkan pesan disini" >
+                        <input type="text" class="message form-control" id="inp_message" placeholder="masukkan pesan disini" >
                       </div>
                       <div class="d-flex justify-content-center m-5">
                         <button type="submit" class="btn button w-75">Kirim</button>
