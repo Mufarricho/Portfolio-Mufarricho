@@ -235,6 +235,10 @@ form label {
     height: 100px;
 }
 
+.sosmed div img:hover{
+    width: 50px;
+}
+
 
 
 @keyframes upDown {
