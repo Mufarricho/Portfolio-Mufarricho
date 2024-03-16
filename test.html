@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee Text</title>
+  <style>
+    /* Custom CSS */
+    .marquee-container {
+      width: 100%; /* Lebar container */
+      overflow: hidden; /* Semua elemen yang berlebihan akan disembunyikan */
+      white-space: nowrap; /* Mencegah teks untuk wrap ke baris baru */
+    }
+    .marquee-text {
+      display: inline-block; /* Menampilkan teks dalam satu baris */
+      animation: marquee 10s linear infinite; /* Animasi marquee */
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); } /* Awal animasi, mulai dari kanan */
+      100% { transform: translateX(-100%); } /* Akhir animasi, geser ke kiri */
+    }
+  </style>
+</head>
+<body>
+
+<div class="marquee-container">
+  <span class="marquee-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+</div>
+
+</body>
+</html>

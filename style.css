@@ -12,6 +12,10 @@ section {
     z-index: 1;
 }
 
+.logos {
+    width: 50%;
+}
+
 section::before{
     z-index: -1;
     content: '';
@@ -167,6 +171,13 @@ form label {
 }
 
 @media only screen and (max-width:768px){
+    .logos{
+        width: 100%;
+    }
+    .logos img{
+        /* width: 20px; */
+        height:80px;
+    }
     .home img {
         width: 50%;
     }
@@ -183,6 +194,9 @@ form label {
     }
 }
 @media only screen and (max-width:576px){
+    .logos{
+        display: none;
+    }
     .home img {
         width: 20%;
         display: flex;
@@ -203,6 +217,9 @@ form label {
 
 
 @media only screen and (max-width:380px){
+    .logos{
+        display: none;
+    }
     .namaku {
         font-size: 50px;
     }
@@ -245,7 +262,10 @@ form label {
     width: 50px;
 }
 
-
+@keyframes marquee{
+    0%{ transform:translateX(100%) ; -webkit-transform:translateX(100%) ; -moz-transform:translateX(100%) ; -ms-transform:translateX(100%) ; -o-transform:translateX(100%) ; }
+    100%{ transform:translateX(-100%) ; -webkit-transform:translateX(-100%) ; -moz-transform:translateX(-100%) ; -ms-transform:translateX(-100%) ; -o-transform:translateX(-100%) ; }
+}
 
 @keyframes upDown {
     0% {
